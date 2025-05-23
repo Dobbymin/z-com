@@ -1,3 +1,5 @@
-export default function LoginPage() {
-  return <main>로그인모달</main>;
+import { LoginModal } from '@/app/(beforeLogin)/_component';
+
+export default function Page() {
+  return <LoginModal />;
 }
