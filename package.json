@@ -12,7 +12,8 @@
   "dependencies": {
     "next": "15.1.8",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sass": "^1.89.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
