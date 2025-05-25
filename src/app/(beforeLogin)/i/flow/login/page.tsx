@@ -1,4 +1,4 @@
-import { LoginModal } from '@/app/(beforeLogin)/_component';
+import { LoginModal } from '@/shared';
 
 export default function Page() {
   return <LoginModal />;

@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 
-import { Main } from '@/app/(beforeLogin)/_component';
+import { Main } from '@/shared';
 
 export default function Login() {
   const router = useRouter();

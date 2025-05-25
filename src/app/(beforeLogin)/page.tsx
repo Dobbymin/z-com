@@ -1,4 +1,4 @@
-import { Main } from './_component';
+import { Main } from '@/shared';
 
 export default function Home() {
   return <Main />;
