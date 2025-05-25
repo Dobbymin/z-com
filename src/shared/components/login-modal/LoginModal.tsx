@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import style from './login.module.css';
+import style from './login.module.scss';
 
 /* eslint-disable */
 

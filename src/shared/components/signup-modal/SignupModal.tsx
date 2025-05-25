@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 
 import { ChangeEventHandler, FormEventHandler, useState } from 'react';
 
-import style from './signup.module.css';
+import style from './signup.module.scss';
 
 /* eslint-disable */
 

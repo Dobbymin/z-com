@@ -1,18 +1,20 @@
+@import '@/shared/styles/main.scss';
+
 .modalBackground {
-  width: 100vw;
+  width: $full-width;
   height: 100%;
   display: flex;
   justify-content: center;
   position: absolute;
+  background-color: $gray-primary;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal {
-  background: #ffffff;
+  background: $white;
   position: relative;
   top: 5%;
   max-width: 80vw;
@@ -20,12 +22,12 @@
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  height: 550px;
+  height: 450px;
 }
 
 .modalHeader {
   padding: 36px 80px 20px;
-  font-size: 31px;
+  font-size: $font-lg;
   font-weight: bold;
 }
 
@@ -43,7 +45,7 @@
 .inputDiv {
   display: flex;
   flex-direction: column;
-  height: 56px;
+  height: $input-height;
   position: relative;
   margin: 12px 0;
 }
@@ -52,20 +54,21 @@
   display: inline-block;
   position: absolute;
   top: 0;
-  border: 1px solid rgb(207, 217, 222);
+  border: 1px solid $border-color;
   border-radius: 4px;
-  font-size: 13px;
-  height: 56px;
+  font-size: $font-xs;
+  height: $input-height;
   padding: 8px 8px 0;
-  color: rgb(83, 100, 113);
-}
-.inputLabel:focus-within {
-  color: red;
+  color: $gray-blue;
+
+  &:focus-within {
+    color: $red;
+  }
 }
 .input {
   width: 100%;
   border: none;
-  font-size: 17px;
+  font-size: $font-md;
   margin-top: 16px;
   padding: 12px 8px 8px;
   outline: none;
@@ -79,15 +82,19 @@
   width: 100%;
   height: 50px;
   border-radius: 25px;
-  background-color: rgb(15, 20, 25);
-  color: white;
-  font-size: 17px;
-}
-.actionButton:disabled {
-  opacity: 0.5;
-}
-.actionButton:hover {
-  background-color: rgb(39, 44, 48);
+  background-color: $black-bg;
+  color: $white;
+  font-size: $font-md;
+  cursor: pointer;
+  border: none;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: $black-hover;
+  }
 }
 
 .closeButton {
@@ -96,14 +103,15 @@
   border-radius: 17px;
   border: none;
   cursor: pointer;
-  background-color: #fff;
+  background-color: $white;
   position: absolute;
   left: 16px;
   top: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.closeButton:hover {
-  background-color: rgba(15, 20, 25, 0.1);
+
+  &:hover {
+    background-color: $gray-hover;
+  }
 }

@@ -1,0 +1,54 @@
+@import '@/shared/styles/main.scss';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: $white;
+  width: $full-width;
+  height: $full-height;
+}
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-weight: bold;
+    font-size: $font-xl;
+    margin: 48px 0;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: $font-lg;
+    margin-bottom: 32px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: $font-md;
+    margin: 40px 0 20px;
+  }
+}
+
+.signup {
+  @include button-base;
+  color: $white;
+  border: none;
+  @include button-states($blue-primary, $blue-hover, $blue-hover, $blue-hover);
+}
+
+.login {
+  @include button-base;
+  color: $blue-primary;
+  border: 1px solid $border-color;
+  @include button-states(transparent, $blue-light, $blue-light, $blue-light);
+}
