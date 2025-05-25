@@ -1,0 +1,48 @@
+/* 🎨 Colors */
+
+// Black
+$black-bg: rgb(15, 20, 25);
+$black-hover: rgb(39, 44, 48);
+
+// Blue
+$blue-primary: rgb(29, 155, 240);
+$blue-hover: rgb(26, 140, 216);
+$blue-light: rgba(29, 155, 240, 0.1);
+
+// Gray
+$gray-primary: rgba(0, 0, 0, 0.4);
+$gray-blue: rgb(83, 100, 113);
+$gray-hover: rgba(15, 20, 25, 0.1);
+
+// Red
+$red: red;
+
+// White
+$white: rgb(255, 255, 255);
+$white-bg: rgb(247, 249, 249);
+$white-skyblue: rgb(239, 243, 244);
+
+// border
+$border-color: rgb(207, 217, 222);
+
+// input
+$input-height: 56px;
+
+/* 📐 Sizes */
+
+// Button
+$btn-width: 300px;
+$btn-height: 40px;
+$btn-radius: 20px;
+$btn-padding-x: 16px;
+
+/* 🔤 Fonts */
+$font-xs: 13px;
+$font-sm: 15px;
+$font-md: 17px;
+$font-lg: 31px;
+$font-xl: 64px;
+
+/* 🧱 Layout */
+$full-width: 100dvw;
+$full-height: 100dvh;

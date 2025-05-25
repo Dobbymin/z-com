@@ -1,0 +1,39 @@
+// 기본 버튼 상태 믹스인
+@mixin button-states(
+  $bg-default,
+  $bg-hover,
+  $bg-focus: null,
+  $bg-active: null
+) {
+  background-color: $bg-default;
+
+  &:hover {
+    background-color: $bg-hover;
+  }
+
+  @if $bg-focus != null {
+    &:focus {
+      background-color: $bg-focus;
+      outline: none;
+    }
+  }
+
+  @if $bg-active != null {
+    &:active {
+      background-color: $bg-active;
+    }
+  }
+}
+
+// 버튼 공통 스타일
+@mixin button-base {
+  width: $btn-width;
+  height: $btn-height;
+  border-radius: $btn-radius;
+  padding: 0 $btn-padding-x;
+  font-size: $font-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
